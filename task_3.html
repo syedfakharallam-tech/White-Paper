@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <style>
+            body{
+                padding: 0;
+                background: black;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #upper{
+                border-bottom: 6px double white;
+                border-right: 2px solid white;
+                border-left: 2px solid white;
+                padding: 0px 10px;
+                border-radius: 10px;
+                margin-top:10px;
+            }
+            form{
+                border: 2px dashed white;
+                padding: 0px 15px;
+                border-top: none;
+                border-radius: 10px;
+            }
+            input,textarea{
+                border-radius: 12px;
+                font-size: 16px;
+                padding: 5px;
+                width: 100%;
+                margin: 5px;
+                background-color: black;
+                border: 1.5px solid white;
+                color: white;
+                transition: 0.5s;
+            }
+            input:hover,textarea:hover,select:hover{
+                border:1.5px solid red;
+            }
+            input:focus,textarea:focus,select:focus{
+                border: 1.5px solid white;
+                outline: none;
+                background-color: white;
+                box-shadow: 0 0 20px white;
+                color: black;
+                transform: scale(1.05);
+                border: none;
+            }
+            select{
+               padding: 4px;
+               transition: 0.3s;
+               border-radius: 10px;
+               color: white;
+               background-color: black;
+               border: 1.5px solid white;
+               cursor: pointer;
+            }
+            
+            
+            
+            button{
+                font-size: 20px;
+                padding:10px;
+                margin: 10px;
+                border-radius: 20px;
+                background-color: white;
+                color: black;
+                border:none;
+                transition: 0.3s;
+                display: block;
+                margin: 30 auto;
+                box-shadow: 0 0 20px white;
+                cursor: pointer;
+
+            }
+            button:hover{
+                background-color: black;
+                color: white;
+                transform:translateY(-3px);
+                border: none;
+                box-shadow: 0 0 20px red;
+            }
+            button:active{
+                transform:translateY(3px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="upper">
+            <h3>Request for White Paper</h3>
+            <p>Please fill out the form below. If your have any questions,
+                please
+                e-mail whitepaper@ektron.com.</p>
+            <p>* - required fields</p>
+        </div>
+        <form>
+            <p>*First Name: <input name="f2" type="text" size="20"></p>
+            <p>*Last Name: <input name="f3" type="text" size="20"></p>
+            <p>Company Name: <input name="f4" type="text" size="40"></p>
+            <p>Company/Personal website: <input name="f5" type="text"
+                    size="30"></p>
+            <p>*Email: <input name="f6" type="text" size="20"></p>
+            <p>Phone: <input name="f7" type="text" size="21"> Ext: <input
+                    name="f8" type="text" size="10"></p>
+            <p>
+                State/Province:
+                <select name="s1">
+                    <option>Select for USA or Canada Only</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Colorado</option>
+                    <option>California</option>
+                </select>
+            </p>
+            <p>
+                *Country:
+                <select name="s2">
+                    <option>United States</option>
+                    <option>Canada</option>
+
+                </select>
+            </p>
+            <p>Comments: </p>
+            <p> <textarea name="t1" rows="3" cols="58"></textarea> </p>
+            <button>Request White Paper</button>
+        </form>
+    </body>
+</html>
